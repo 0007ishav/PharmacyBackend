@@ -52,7 +52,7 @@ const VerifyAccount = () => {
             Verify Your Account
           </h1>
           <p className="mb-4">
-            Enter the verification code sendt to your email
+            Enter the verification code send to your email
           </p>
         </div>
 
