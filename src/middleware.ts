@@ -19,11 +19,12 @@ export async function middleware(request: NextRequest) {
       url.pathname.startsWith('/verify') ||
       url.pathname === '/')
   ) {
-    return NextResponse.redirect(new URL('/dashboard', request.url));
+    console.log('Redirecting to: https://ishan-medicose.vercel.app/');
+    return NextResponse.redirect('https://ishan-medicose.vercel.app/');
   }
 
   if (!token && url.pathname.startsWith('/dashboard')) {
-    return NextResponse.redirect(new URL('/sign-in', request.url));
+    return NextResponse.redirect('https://ishan-medicose.vercel.app/');
   }
 
   return NextResponse.next();

@@ -41,7 +41,7 @@ export default function verificationEmail({
         </Row>
         <Row>
             <Text>
-                Thank you for registring. Please use the following verificatio code to complete your registration.
+                Thank you for registering with Ishan Medicose. Please use the following verification code to complete your registration.
             </Text>
         </Row>
         <Row>
@@ -52,14 +52,7 @@ export default function verificationEmail({
             If you did not request this code, please ignore this email.
           </Text>
         </Row>
-        {/* <Row>
-          <Button
-            href={`http://localhost:3000/verify/${username}`}
-            style={{ color: '#61dafb' }}
-          >
-            Verify here
-          </Button>
-        </Row> */}
+       
       </Section>
     </Html>
   );
